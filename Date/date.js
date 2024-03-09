@@ -16,3 +16,7 @@ console.log(typeof date);
 let mycretedate = new Date(23,0,23);
 
 console.log(mycretedate.toDateString());
+
+
+let mytimestamp = Date.now();
+console.log("Timestamp: "+mytimestamp);
