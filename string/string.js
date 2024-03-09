@@ -24,7 +24,41 @@ const name = "Alice";
 
 
 
-const str = "Hello";
-const firstChar = str[0];
-const lastChar = str[str.length - 1];
-console.log(`The first char is: ${firstChar} and The Last Char is :${lastChar}`);
+// const str = "Hello";
+// const firstChar = str[0];
+// const lastChar = str[str.length - 1];
+// console.log(`The first char is: ${firstChar} and The Last Char is :${lastChar}`);
+
+// const str = "Hello, world!";
+// const substring = str.substring(7, 12); // "world"
+
+// console.log(substring);
+
+// const str = "Hello";
+// const uppercase = str.toUpperCase(); // "HELLO"
+// const lowercase = str.toLowerCase(); // "hello"
+
+// console.log(str);
+
+
+// const str = "Hello, world!";
+// const index = str.indexOf("world"); // 7
+// console.log(index);
+
+
+// const str = "Hello, world!";
+// const newStr = str.replace("world", "Alice"); // "Hello, Alice!"
+
+// console.log(str);
+
+
+// const str = "  Hello, world!  ";
+// const trimmedStr = str.trim(); // "Hello, world!"
+
+// console.log(trimmedStr);
+
+
+const str = "42";
+const number = parseInt(str); // 42
+console.log(number);
+

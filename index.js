@@ -6,3 +6,5 @@ let accounts = [
 ];
 
 console.table(accounts);
+
+
