@@ -29,3 +29,12 @@ console.log(Math.E);
 console.log(Math.SQRT2);
 console.log(Math.SQRT1);
 console.log(Math.pow(8,2));
+
+console.log(Math.random()*10);
+
+
+//formulaa
+
+ const Min = 10;
+ const Max = 20;
+console.log(Math.floor(Math.random() * (Max-Min + 1)));
