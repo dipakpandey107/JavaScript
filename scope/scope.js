@@ -1,4 +1,5 @@
 
+//local and global variable 
 let a= 300;
 
 if(true){
