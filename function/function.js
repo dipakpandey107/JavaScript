@@ -29,7 +29,7 @@ const result = addTwoNumbers(3, 5)
 
 function loginUserMessage(username = "sam"){
     if(!username){
-        console.log("PLease enter a username");
+       // console.log("PLease enter a username");
         return
     }
     return `${username} just logged in`
@@ -51,7 +51,7 @@ const user = {
 }
 
 function handleObject(anyobject){
-    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+   // console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 }
 
 // handleObject(user)
@@ -67,4 +67,31 @@ function returnSecondValue(getArray){
 }
 
 // console.log(returnSecondValue(myNewArray));
-console.log(returnSecondValue([200, 400, 500, 1000]));
+//console.log(returnSecondValue([200, 400, 500, 1000]));
+
+
+const person = {
+    name :"paul",
+    age :"18"
+}
+
+function person1(personobj){
+    console.log(`name and age is return ${personobj.name},${personobj.age}`)
+    return;
+
+};
+person1(person);
+
+
+const student = {
+    name : "arkan",
+    id: "1",
+    course :"msc.it"
+}
+
+
+function studentDetails(studentDetails){
+    console.log(`The student name is ${studentDetails.name} Id is ${studentDetails.id} course is ${studentDetails.course}`);
+}
+
+studentDetails(student);
