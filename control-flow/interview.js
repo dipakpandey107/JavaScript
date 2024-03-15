@@ -23,3 +23,11 @@ if(useremail){
  if(Object.keys(emptyobj).length === 0){
     console.log("Empty object");
  }
+
+
+ // nullish coalescing operator (??)
+
+ let val1;
+ val1 = 5 ?? 10
+
+ console.log(val1);
