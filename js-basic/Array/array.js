@@ -56,3 +56,47 @@
 const all_heros =[...marvel_heros,...dc];
 console.log(all_heros);
 
+
+
+
+//sum of all number
+
+
+// function sumto(n){
+//     let sum =0;
+//     for(let i =0;i<=n;i++){
+//         sum+=i;
+//     }
+//     return sum;
+// }
+
+// console.log(sumto(10));
+
+
+
+// //recusion
+// function sumto(n){
+//   if(n==1) return 1;
+//   return n+sumto(n-1);
+// }
+// console.log(sumto(10));
+
+
+//using logic 
+
+// function sumto(n){
+//     return    (n*(n+1))/2;
+// }
+// console.log(sumto(5));
+
+
+
+//factorial
+
+
+// function fact(n){
+//     return (n !=1)?n*fact(n - 1):1 ;
+// }
+// console.log(fact(5));
+
+
