@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dipak</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <ui class="language">
+      <li>
+                 javascript
+      </li>
+    </ui>
+</body>
+
+<script>
+    function addlanguage(langName){
+      const li =   document.createElement('li')
+        li.innerHTML = `${langName}`  
+       document.querySelector('.language').appendChild(li)
+
+    }
+    addlanguage("Java");
+    addlanguage("c++")
+
+    function addoptimize (langname){
+       const li = document.createElement('li')
+       li.appendChild(document.createTextNode(langname)) 
+       document.querySelector('.langname').appendChild(li)
+    }
+addoptimize('golnag');
+
+
+//Edit
+
+const secondlang = document.querySelector('li:nth-child(2)')
+const newli = document.createElement('li')
+newli.textContent="mojo"
+secondlang.replaceWith(newli);
+
+
+//edit
+
+const firstlang = document.querySelector("li:first-child")
+firstlang.innerHTML="<li>master</li>"
+
+
+//remove  //Delete
+
+const lastlang = document.querySelector('li:last-child')
+lastlang.remove()
+
+
+
+
+</script>
+</html>
