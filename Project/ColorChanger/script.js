@@ -1,26 +1,12 @@
-const button = document.querySelectorAll('.button')
-//console.log(button)
+function changeColor(color) {
+   document.body.style.backgroundColor = color;
+   showSuccessPopup();
+}
 
-
-const body = document.querySelector("body");
-
-button.forEach(function (btn){
-button.addEventListner('click' , function(e){
-   // console.log(e);
-   console.log ( e.target)
-   if(e.target.id ==="grey"){
-      body.style.backgroundColor = e.target.id;
-   }
-   if(e.target.id ==="white"){
-    body.style.backgroundColor = e.target.id;
- }
- if(e.target.id ==="blue"){
-    body.style.backgroundColor = e.target.id;
- }
- if(e.target.id ==="yellow"){
-    body.style.backgroundColor = e.target.id;
- }
-
-})
-
-});
+function showSuccessPopup() {
+   const popup = document.getElementById('popup');
+   popup.style.display = 'block';
+   setTimeout(() => {
+       popup.style.display = 'none';
+   }, 2000); 
+}

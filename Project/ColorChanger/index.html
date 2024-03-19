@@ -32,17 +32,32 @@
         #yellow {
             background-color: yellow;
         }
+
+        #popup {
+            display: none;
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            border-radius: 5px;
+            z-index: 1000;
+        }
     </style>
 </head>
 <body>
     <h1>Change the color </h1>
-    <span class="button" id="grey" onclick="document.body.style.backgroundColor = 'grey'"></span>
-    <span class="button" id="white" onclick="document.body.style.backgroundColor = 'white'"></span>
-    <span class="button" id="blue" onclick="document.body.style.backgroundColor = 'blue'"></span>
-    <span class="button" id="yellow" onclick="document.body.style.backgroundColor = 'yellow'"></span>
+    <span class="button" id="grey" onclick="changeColor('grey')"></span>
+    <span class="button" id="white" onclick="changeColor('white')"></span>
+    <span class="button" id="blue" onclick="changeColor('blue')"></span>
+    <span class="button" id="yellow" onclick="changeColor('yellow')"></span>
     <h2>
         try click on a button to <span> change the background color of this background</span>
     </h2>
+    <div id="popup">Color changed successfully!</div>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
