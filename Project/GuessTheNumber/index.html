@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guess the Number</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    input[type="number"] {
+        padding: 5px;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    button {
+        padding: 5px 15px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    #message {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Guess the Number (1-100)</h1>
+    <input type="number" id="guessInput" min="1" max="100">
+    <button onclick="checkGuess()">Guess</button>
+    <p id="message"></p>
+</div>
+<script src = "script.js"></script>
+</body>
+</html>
