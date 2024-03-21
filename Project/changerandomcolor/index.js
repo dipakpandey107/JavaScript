@@ -24,6 +24,7 @@
 
 document.getElementById('start').addEventListener("click",function(){
     intervalId = setInterval(function(){
+      //  var intervalId;
         let randomColor = getRandomColor();
         document.body.style.background = randomColor;
 
