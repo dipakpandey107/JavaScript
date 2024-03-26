@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api</title>
+</head>
+<body> 
+    
+</body>
+<script>
+    const requrl ='https://api.github.com/users/dipakpandey107';
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requrl);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            console.log(xhr.responseText);
+        }
+    };
+    xhr.send();
+</script>
+</html>
